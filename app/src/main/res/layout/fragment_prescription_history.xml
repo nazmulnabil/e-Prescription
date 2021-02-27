@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".prescription_history"
+   >
+
+   <LinearLayout
+
+       android:id="@+id/lin_pres_hisId"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       android:orientation="vertical">
+
+       <androidx.appcompat.widget.SearchView
+           android:id="@+id/search_view_id"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/lav"
+          android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:padding="5dp"/>
+
+
+       <androidx.recyclerview.widget.RecyclerView
+
+
+           android:id="@+id/recycler_pres_history_id"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+
+
+   </LinearLayout>
+
+</FrameLayout>

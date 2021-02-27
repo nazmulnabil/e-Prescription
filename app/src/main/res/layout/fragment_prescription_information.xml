@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prescription_information"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+
+
+       <TextView
+           android:id="@+id/nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nazmul Karim"
+           android:textStyle="bold"
+           android:layout_margin="5dp"
+           android:textAlignment="center"
+           android:gravity="center_horizontal"
+           android:textSize="20sp"
+           android:elevation="6dp"
+           android:shadowColor="@color/purple_700"
+           android:shadowDx="1"
+           android:shadowDy="1"
+           android:shadowRadius="2"
+
+
+           />
+
+
+            <TextView
+                android:layout_below="@+id/nameTV"
+                android:id="@+id/ComplaintsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complaints "
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:shadowColor="@color/gray"
+                android:shadowDx="6"
+                android:shadowDy="6"
+                android:shadowRadius="10"
+
+                />
+
+        <TextView
+            android:layout_below="@+id/ComplaintsTV"
+            android:id="@+id/Previous_HistoryTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Previous_History "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+
+            />
+
+        <TextView
+            android:layout_below="@+id/Previous_HistoryTV"
+            android:id="@+id/Local_ExaminationTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Local_Examination "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+            />
+
+
+        <TextView
+            android:id="@+id/DiagnosisTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Local_ExaminationTV"
+
+            android:layout_margin="5dp"
+            android:text="Diagnosis "
+            android:textStyle="bold"
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+
+            />
+
+        <TextView
+            android:layout_below="@+id/DiagnosisTV"
+            android:id="@+id/InvestigationTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Investigation"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+
+            />
+
+        <TextView
+            android:layout_below="@+id/InvestigationTV"
+            android:id="@+id/TreatmentTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Treatment "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+            />
+
+
+        <TextView
+            android:layout_below="@+id/TreatmentTV"
+            android:id="@+id/Coordinated_ByTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coordinated_By "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+            />
+
+        <TextView
+            android:layout_below="@+id/Coordinated_ByTV"
+            android:id="@+id/Blood_PressureTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood_Pressure "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+            />
+
+
+        <TextView
+            android:layout_below="@+id/Blood_PressureTV"
+            android:id="@+id/Total_VisitTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total_Visit "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+
+
+            />
+
+        <TextView
+            android:layout_below="@+id/Total_VisitTV"
+            android:id="@+id/MedicationTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medication "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+
+            />
+
+        <TextView
+            android:layout_below="@+id/MedicationTV"
+            android:id="@+id/AdviceTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advice"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+
+            />
+
+        <TextView
+            android:layout_below="@+id/AdviceTV"
+            android:id="@+id/Next_Propose_DateTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next_Propose_Date "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+
+            android:shadowColor="@color/gray"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+
+            />
+
+
+     </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

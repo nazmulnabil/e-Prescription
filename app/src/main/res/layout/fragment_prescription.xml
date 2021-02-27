@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    tools:context=".Prescription">
+
+   <ScrollView
+      android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="10dp">
+
+         <LinearLayout
+             android:id="@+id/lin_id"
+             android:weightSum="4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+                 <Spinner
+                     android:id="@+id/spin_namelist"
+                 android:layout_weight="2"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"/>
+
+                  <TextView
+                  android:id="@+id/Date_pres_id"
+                  android:layout_weight="2"
+                      android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                   android:text="Date:"/>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_below="@+id/lin_id"
+             android:id="@+id/linear"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:weightSum="4">
+
+         <TextView
+             android:id="@+id/name_pres_id"
+             android:layout_weight="3"
+             android:textStyle="bold"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+                 android:text="name:"/>
+
+             <TextView
+                 android:id="@+id/age_pres_id"
+                 android:layout_weight="1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:text="age:"/>
+
+         </LinearLayout>
+
+
+
+
+
+         <View
+             android:layout_below="@+id/linear"
+             android:id="@+id/hor"
+             android:layout_marginTop="20dp"
+             android:layout_marginBottom="20dp"
+             android:background="@color/teal_700"
+             android:layout_width="wrap_content"
+             android:layout_height="1dp"
+
+             />
+
+         <!--Complaints   -->
+         <LinearLayout
+             android:id="@+id/linear1"
+             android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+             android:layout_below="@+id/hor"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Complaintstv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Complaints : "
+                 android:textStyle="bold"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Complaintsetid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Complaints   ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Complaintsed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+
+
+         <!--Previous History  -->
+         <LinearLayout
+             android:id="@+id/linear2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear1"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+
+
+                 android:id="@+id/Previous_Historytv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textStyle="bold"
+                 android:text="Previous History : " />
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Previous_Historyetid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Previous History   ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Previous_Historyed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+
+
+         <!--Local Examination -->
+         <LinearLayout
+             android:id="@+id/linear3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear2"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Local_Examinationtv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textStyle="bold"
+                 android:text="Local Examination : " />
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Local_Examinationetid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Local Examination  ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Local_Examinationed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+
+
+         <!--Diagnosis  -->
+         <LinearLayout
+             android:id="@+id/linear4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear3"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Diagnosis_tv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textStyle="bold"
+                 android:text="Diagnosis  : " />
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Diagnosis_etid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Diagnosis   ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Diagnosis_ed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+
+
+
+         <!--Investigation  -->
+         <LinearLayout
+             android:id="@+id/linear5"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear4"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Investigation_tv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:textStyle="bold"
+                 android:text="Investigation  : " />
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Investigation_etid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Investigation  ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Investigation_ed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+
+
+
+         <!--Treatments  -->
+         <LinearLayout
+             android:id="@+id/linear6"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear5"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Treatments_tv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Treatments : "
+                 android:textStyle="bold"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Treatments_etid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Treatments ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Treatments_ed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+
+         <!--Coordinated By  -->
+         <LinearLayout
+             android:id="@+id/linear7"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear6"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Coordinated_By_tv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Coordinated By : "
+                 android:textStyle="bold"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Coordinated_By_etid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Coordinated By ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Coordinated_By_ed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+
+
+         <!--Blood Pressure  -->
+         <LinearLayout
+             android:id="@+id/linear8"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear7"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Blood_Pressure_tv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Blood Pressure : "
+                 android:textStyle="bold"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Blood_Pressure_etid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Blood Pressure ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Blood_Pressure_ed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+
+         <!--Total Visit(Previous) :  -->
+         <LinearLayout
+             android:id="@+id/linear9"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear8"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Total_Visit_tv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Total Visit(Previous) : "
+                 android:textStyle="bold"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Total_Visit_etid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Total Visit(Previous) : ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Total_Visit_ed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+
+         <View
+             android:layout_below="@+id/linear9"
+             android:id="@+id/hor1"
+             android:layout_marginTop="20dp"
+             android:layout_marginBottom="20dp"
+             android:background="@color/teal_700"
+             android:layout_width="wrap_content"
+             android:layout_height="1dp"
+
+             />
+
+         <!--Medication  :  -->
+         <LinearLayout
+             android:id="@+id/linear10"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/hor1"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Medication_tv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Medication : "
+                 android:textStyle="bold"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Medication_etid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Medication : ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Medication_ed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+         <!--Advice   :  -->
+         <LinearLayout
+             android:id="@+id/linear11"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear10"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Advice_tv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Advice : "
+                 android:textStyle="bold"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Advice_etid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Advice : ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Advice_ed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+         <!--Next Propose Date  -->
+         <LinearLayout
+             android:id="@+id/linear12"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linear11"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:orientation="horizontal"
+             android:weightSum="4">
+
+             <TextView
+                 android:id="@+id/Next_Propose_Date_tv_pres"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Next Propose Date : "
+                 android:textStyle="bold"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/Next_Propose_Date_etid"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="3"
+                 android:hint="Next Propose_Date  : ">
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/Next_Propose_Date_ed"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+         </LinearLayout>
+
+         <Button
+             android:layout_margin="10dp"
+             android:id="@+id/save_prescription_btnid"
+             android:layout_below="@+id/linear12"
+
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="save and print"
+             android:textStyle="bold"
+             android:textColor="@color/white"
+             android:background="@color/black"
+            android:layout_alignParentRight="true"/>
+
+     </RelativeLayout>
+
+
+ </ScrollView>
+</FrameLayout>

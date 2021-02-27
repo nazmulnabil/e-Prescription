@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Relative_sample_view_pat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/teal_700">
+
+
+
+    <TextView
+
+        android:id="@+id/sample_name"
+        android:text="Name:Nazmul Karim"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <LinearLayout
+        android:layout_below="@+id/sample_name"
+        android:id="@+id/lin_recycler"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/sample_age"
+            android:text="Age:25"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+             android:layout_weight="1"
+             android:id="@+id/sample_gender"
+             android:textStyle="bold"
+             android:text="Gender:Male"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+
+
+
+          <TextView
+            android:layout_weight="2"
+            android:id="@+id/sample_nickname"
+            android:text="Nickname:nabil"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+           <TextView
+
+               android:layout_below="@+id/lin_recycler"
+               android:id="@+id/sample_mobile"
+               android:text="mobile: 01735619822"
+               android:textStyle="bold"
+               android:layout_margin="5dp"
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_below="@+id/sample_mobile"
+            android:id="@+id/sample_email"
+            android:layout_margin="5dp"
+            android:text="email: nabilnazmul868@gnail.com"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</RelativeLayout>

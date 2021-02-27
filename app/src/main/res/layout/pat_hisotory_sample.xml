@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+
+    android:layout_margin="8dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/lav"
+    >
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/pat_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/pat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanvir Ahmed."
+        android:textStyle="bold"
+        />
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
